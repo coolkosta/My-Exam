@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <TextView
+        android:id="@+id/contacts_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Contact with me:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:layout_marginStart="70dp"
+        android:id="@+id/telegram_image_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTintMode="add"
+        android:scaleType="fitCenter"
+        android:src="@drawable/telegram"
+        app:layout_constraintBottom_toTopOf="@+id/author_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/github_image_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacts_text_view" />
+
+
+    <ImageButton
+        android:layout_marginEnd="70dp"
+        android:id="@+id/github_image_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTintMode="add"
+        android:scaleType="fitCenter"
+        android:src="@drawable/github"
+        app:layout_constraintBottom_toTopOf="@+id/author_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/telegram_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/contacts_text_view" />
+
+
+    <TextView
+        android:id="@+id/author_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+
+        android:text="@string/by_coolkosta_2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
