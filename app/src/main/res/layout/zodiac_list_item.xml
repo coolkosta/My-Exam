@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:id="@+id/zodiac_image_view"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@id/zodiac_button_view"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/zodiac_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            app:layout_constraintBottom_toTopOf="@id/zodiac_button_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/zodiac_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/zodiac_button_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
