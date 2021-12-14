@@ -1,6 +1,5 @@
 package com.coolkosta.examwork
 
-import android.widget.ImageButton
 
 
 data class Zodiac(
